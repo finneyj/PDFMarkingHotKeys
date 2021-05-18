@@ -1,10 +1,9 @@
 # PDFMarkingHotKeys
 
-ctrl-m turn on/of marking mode
- 
-in marking mode:
-
-`         record half-mark
-0-9       record mark
-F1-F4     set question number (sticky) (1-4 respectively)
-hash      free text comment
+| Key | Action |
+| ----------- | ----------- |
+| ctrl-m | Turn on/of marking mode |
+| ````` | Record half-mark |
+| 0-9 | record mark (0-9 respectively) |
+| F1-F4 | set question number (sticky) |
+| \# | free text comment |
