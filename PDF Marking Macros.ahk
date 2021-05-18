@@ -76,6 +76,10 @@ if (Enabled = 1)
    Click
    Send,^6
 }
+else
+{
+   Send,{#}
+}
 return
 
 $0::
