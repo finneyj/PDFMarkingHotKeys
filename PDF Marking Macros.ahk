@@ -7,6 +7,19 @@ Enabled := 0
 KeyDelay := 50
 QuestionHeader:= ""
 
+comment(Content)
+{
+    global KeyDelay
+
+    Click
+    Send,^6
+    Sleep,KeyDelay
+    Send,%Content%
+    Sleep,KeyDelay
+    Send,{Esc}
+    return
+}
+
 add_mark(MarkValue)
 {
     global KeyDelay
@@ -71,6 +84,7 @@ else
 return
 
 $#::
+global Enabled
 if (Enabled = 1)
 {
    Click
@@ -81,6 +95,31 @@ else
    Send,{#}
 }
 return
+
+$^g::
+global Enabled
+if (Enabled = 1)
+   comment("(generous)")
+else
+   Send,^g
+return
+
+$^i::
+global Enabled
+if (Enabled = 1)
+   comment("(irrelevant)")
+else
+   Send,^i
+return
+
+$^v::
+global Enabled
+if (Enabled = 1)
+   comment("(vague)")
+else
+   Send,^v
+return
+
 
 $0::
 test_add_mark(0)
