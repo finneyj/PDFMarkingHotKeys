@@ -9,5 +9,6 @@
 | \# | free text comment |
 | ^i | Add "(irrelevant)" comment |
 | ^v | Add "(vague)" comment |
+| ^r | Add "(repeated point)" comment |
 | ^g | Add "(generous)" comment |
 

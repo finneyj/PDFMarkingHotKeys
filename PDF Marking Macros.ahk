@@ -120,6 +120,13 @@ else
    Send,^v
 return
 
+$^r::
+global Enabled
+if (Enabled = 1)
+   comment("(repeated point)")
+else
+   Send,^r
+return
 
 $0::
 test_add_mark(0)
